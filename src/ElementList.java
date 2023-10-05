@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 /**
 * Lista de elementos de cualquier tipo T.
-* Guarda una lista de elementos y el número de repeticiones que lecorresponde.
+* Guarda una lista de elementos y el número de repeticiones que le corresponde.
 * Guarda cada elemento una sola vez y lleva la cuenta de cuántos se han guardado en un momento dado.
 */
 class ElementList<T> {
@@ -17,7 +17,7 @@ class ElementList<T> {
 
     /**
     * Registra en elemento en la lista.
-    * Si no existe el elemento lo guarda en la lista y se pone elcontador a 1 en la misma posición.
+    * Si no existe el elemento lo guarda en la lista y se pone el contador a 1 en la misma posición.
     * Si ya existe el elemento simplemente incrementa el contador en la posición correspondiente.
     * @param elemento El elemento a guardar.
     */
@@ -57,7 +57,7 @@ class ElementList<T> {
     * Elimina el elemento de la lista sin importar la cantidad que tenga.
     * Elimina también la entrada correspondiente del contador.
     * @param elemento
-    * @throws NoSuchElementException si no existe el elemento en lalista.
+    * @throws NoSuchElementException si no existe el elemento en la lista.
     */
     public void delete (T elemento) throws NoSuchElementException{
         int index = elementos.indexOf(elemento);
